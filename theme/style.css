@@ -1,5 +1,88 @@
-body {background-color: lightpink;}
-h1 {color: orange;}
-ul {background-color: yellow;} {color: purple;}
-.extra-orange {color: orange;}
-#subheader {font-style: italic;} {font-weight: 500}
+.container {
+  width: 80%
+  margin: 10px auto;
+}
+.header {
+  margin-top: 100px;
+  background-color: cornflowerblue;
+  padding: 25px;
+}
+.header h2 {
+  color: blue;
+}
+.header h3 {
+  color: thistle;
+}
+.navigation {
+  color: darkorange;
+  background-color: yellow;
+  padding: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+}
+.navigation nav > ul > li {
+  font-family: sans-serif;
+  margin: 20px;
+  display: inline;
+  position: relative;
+}
+.navigation .dropdown {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  display: none;
+}
+.navigation a:hover + .dropdown,
+.navigation .dropdown:hover {
+  display: block;
+}
+.content {
+  padding: 50px;
+  margin: 50px;
+  background-color: white;
+}
+.footer {
+  background-color: red;
+  padding: 25px;
+  margin: auto;
+}
+body {
+  background-color: pink;
+  margin: 0%
+}
+h1 {
+  color: lightgreen;
+}
+ul {
+  background-color: yellow;
+  }
+  {
+    color: coral;
+  }
+.extra-orange {
+  color: orange;
+}
+#subheader {
+  font-style: italic;
+  font-weight: 500
+}
+#a-list > li:first-child{
+  background-color: lightsalmon;
+}
+#a-list {
+  background-color: lightgreen;
+}
+#a-list > li:nth-child(2){
+  background-color: paleturquoise;
+}
+#a-list > li:nth-child(3n) {
+  background-color: peachpuff;
+}
+#a-list li:hover {
+  background-color: lavender;
+}
+#nav-links li:hover {
+  background-color: orange;
+}
