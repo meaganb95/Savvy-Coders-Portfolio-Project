@@ -13,6 +13,6 @@ var checkUserName = function checkUserName( userName ){
 
 checkUserName( originalName );
 
-var node = document.querySelector( "#subheader" ).textContent = "Hello, " + originalName;
-
-alert( node );
+document
+    .querySelector( "#subheader" )
+    .outerHTML = "<h3>Hello, " + originalName + "</h3>";
