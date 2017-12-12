@@ -24,10 +24,15 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 2;
 }
 ol, ul {
-	list-style: none;
+	list-style: inside;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	padding: 30px;
 }
 blockquote, q {
 	quotes: none;
@@ -46,27 +51,26 @@ table {
   margin: 10px auto;
 }
 .header {
-  margin-top: 100px;
-  background-color: cornflowerblue;
-  padding: 25px;
+	margin-top: 130px;
+  /*padding: 25px;*/
 }
 .header h2 {
-  color: blue;
+  color: black;
 }
 .header h3 {
-  color: thistle;
+  color: black;
 }
 .navigation {
-  color: darkorange;
-  background-color: yellow;
-  padding: 25px;
+  color: black;
+  background-color: lightseagreen;
+  padding: 10px;
   position: fixed;
   top: 0;
   right: 0;
   width: 100vw;
 }
 .navigation nav > ul > li {
-  font-family: sans-serif;
+  font-family: 'Bree Serif', serif;
   margin: 20px;
   display: inline;
   position: relative;
@@ -76,6 +80,7 @@ table {
   top: 18px;
   right: 0;
   display: none;
+	list-style: none;
 }
 .navigation a:hover + .dropdown,
 .navigation .dropdown:hover {
@@ -84,34 +89,46 @@ table {
 .content {
   padding: 50px;
   margin: 50px;
-  background-color: aquamarine;
+  background: rgba(255, 248, 220, 0.7);
 }
 .footer {
-  background-color: red;
+  background: rgba(255, 248, 220, 0.7);
   padding: 25px;
   margin: auto;
 }
 body {
-  background-color: pink;
-  margin: 0%
+  background-color: teal;
+  margin: 0%;
+	font-family: sans-serif;
+	background-image: url("http://www.publicdomainpictures.net/pictures/120000/velka/teal-patterned-abstract-wallpaper.jpg");
 }
 h1 {
-  color: lightgreen;
+  color: teal;
+	/*font-family: monospace;*/
+	font-family: 'Lobster', cursive;
+	font-size: 60px;
+	text-align: center;
+	background: rgba(255, 248, 220, 0.7);
+	margin-top: 30px;
+}
+h2 {
+  color: black;
+	font-family: 'Bree Serif', serif;
+	font-size: 40px;
+	text-align: center;
 }
 ul {
-  background-color: yellow;
-  }
-  {
-    color: coral;
+	background-color: lightseagreen;
+	color: cornsilk;
   }
 .extra-orange {
   color: orange;
 }
-#subheader {
+/*#subheader {
   font-style: italic;
   font-weight: 500
-}
-#a-list > li:first-child{
+}*/
+/*#a-list > li:first-child{
   background-color: lightsalmon;
 }
 #a-list {
@@ -125,13 +142,28 @@ ul {
 }
 #a-list li:hover {
   background-color: lavender;
-}
+}*/
 #nav-links li:hover {
-  background-color: orange;
+	color: teal;
+  background-color: cornsilk;
 }
 input[type='text']{
-  background-color: lavender
+  background-color: white;
+	font-size: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 10px;
 }
 input[type='checkbox']{
   margin: 50px;
 }
+#mypic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+		padding: 20px;
+		border: 7px solid cornsilk;
+	}

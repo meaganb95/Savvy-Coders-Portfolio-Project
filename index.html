@@ -6,17 +6,48 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Meagan's Portfolio</title>
   <link rel="stylesheet" href="theme/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 </head>
 <body>
-  <h1>Welcome to Meagan's Portfolio!</h1>
-  <h2 id="subheader">This page is Meagan's portfolio project for Savvy Coders</h2>
-  <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/13394188_1216100875091494_651660402778781725_n.jpg?oh=a8ec0502941d26a0b4ffa697b7d096ac&oe=5A6B2F5F" alt="Picture of Meagan">
+  <div class="navigation">
+    <nav>
+      <ul id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/media">Media</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li>
+          <a href="/projects" id="projects-link">Projects</a>
+          <ul class="dropdown">
+            <li><a href="href#">one</a></li>
+            <li><a href="href#">two</a></li>
+            <li><a href="href#">three</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header">
+      <header>
+        <h1>Welcome to Meagan's Savvy Coders Portfolio!</h1>
+        <h2 id="subheader">This page is Meagan's portfolio project for Savvy Coders</h2>
+      </header>
+  </div>
+  <img id="mypic" src="https://avatars1.githubusercontent.com/u/33240609?s=460&v=4" alt="Picture of Meagan">
 <input type="text" id="input" placeholder= "What's your name?">
   <ul>
       <li><a href="https://github.com/meaganb95">GitHub</a></li>
-      <li><a class="extra-orange">Example Text</a></li>
+        <li><a href="https://www.meaganbarbeau.com/">Main Portfolio</a></li>
+      <!-- <li><a class="extra-orange">Example Text</a></li> -->
   </ul>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
   <script src="/js/greeting.js" charset="utf-8"></script>
+</div>
+<div class="footer">
+  <footer>
+    <!-- <p><a href="https://github.com/meaganb95">Here's my GitHub account</a></p> -->
+  </footer>
+</div>
 </body>
 </html>
