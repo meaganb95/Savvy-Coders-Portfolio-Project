@@ -1,15 +1,175 @@
-#grid {
-  display: grid;
-}
-#grid > div {
-  background-color: hotpink;
-  padding: 1em;
-  margin: 0.25em;
-}
-#grid > div:first-child {
-  grid-column: 1 / -1
-}
-@media (min-width: 415px) {
-  #grid {
-    grid-template-columns: repeat(3, 1fr);
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+  	margin: 0;
+  	padding: 0;
+  	border: 0;
+  	font-size: 100%;
+  	font: inherit;
+  	vertical-align: baseline;
   }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+  	display: block;
+  }
+  body {
+  	line-height: 2;
+  }
+  ol, ul {
+  	list-style: inside;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-bottom: 30px;
+  	padding: 30px;
+  }
+  blockquote, q {
+  	quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+  	content: '';
+  	content: none;
+  }
+  table {
+  	border-collapse: collapse;
+  	border-spacing: 0;
+  }
+  .container {
+    width: 80%
+    margin: 10px auto;
+  }
+  .header {
+  	margin-top: 130px;
+    /*padding: 25px;*/
+  }
+  .header h2 {
+    color: black;
+  }
+  .header h3 {
+    color: black;
+  }
+  .navigation {
+    color: black;
+    background-color: lightseagreen;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+  }
+  .navigation nav > ul > li {
+    font-family: 'Bree Serif', serif;
+    margin: 20px;
+    display: inline;
+    position: relative;
+  }
+  .navigation .dropdown {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    display: none;
+  	list-style: none;
+  }
+  .navigation a:hover + .dropdown,
+  .navigation .dropdown:hover {
+    display: block;
+  }
+  .content {
+    padding: 50px;
+    margin: 50px;
+    background: rgba(255, 248, 220, 0.7);
+  }
+  .footer {
+    background: rgba(255, 248, 220, 0.7);
+    padding: 25px;
+    margin: auto;
+  }
+  body {
+    background-color: teal;
+    margin: 0%;
+  	font-family: sans-serif;
+  	background-image: url("http://www.publicdomainpictures.net/pictures/120000/velka/teal-patterned-abstract-wallpaper.jpg");
+  }
+  h1 {
+    color: teal;
+  	/*font-family: monospace;*/
+  	font-family: 'Lobster', cursive;
+  	font-size: 60px;
+  	text-align: center;
+  	background: rgba(255, 248, 220, 0.7);
+  	margin-top: 30px;
+  }
+  h2 {
+    color: black;
+  	font-family: 'Bree Serif', serif;
+  	font-size: 40px;
+  	text-align: center;
+  }
+  ul {
+  	background-color: lightseagreen;
+  	color: cornsilk;
+    }
+
+    #grid {
+      display: grid;
+      padding: 20px;
+    }
+    #grid > div {
+      background-color: rgba(255, 248, 220, 0.7);
+      padding: 1em;
+      margin: 0.25em;
+    }
+    /* #grid > div:first-child {
+      grid-column: 1 / -1
+    } */
+    @media (min-width: 415px) {
+      #grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      #promotionalMaterials, #logo, #branding, #drawing, #adSpread, #coloredPhoto{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 20px;
+      		border: 7px solid lightseagreen;
+        }
+      /* #branding{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 20px;
+      		border: 7px solid lightseagreen;
+        }
+      #drawing{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 20px;
+      		border: 7px solid lightseagreen;
+        }
+      #adSpread{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 20px;
+          border: 7px solid lightseagreen;
+        }
+      #coloredPhoto{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 20px;
+      		border: 7px solid lightseagreen;
+        } */
