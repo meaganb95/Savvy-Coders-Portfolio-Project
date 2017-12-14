@@ -125,15 +125,31 @@
     #grid {
       display: grid;
       padding: 20px;
+      /* display: flex; */
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: rgba(255, 248, 220, 0.7)
+}
     }
     #grid > div {
       background-color: rgba(255, 248, 220, 0.7);
       padding: 1em;
       margin: 0.25em;
+      /* display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap; */
     }
     /* #grid > div:first-child {
       grid-column: 1 / -1
     } */
+    #grid > div{
+      max-width: 300px;
+    }
+    #grid > div img{
+      width: 100%;
+    }
     @media (min-width: 415px) {
       #grid {
         grid-template-columns: repeat(3, 1fr);
